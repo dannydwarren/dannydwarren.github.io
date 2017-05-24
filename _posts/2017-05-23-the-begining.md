@@ -27,6 +27,7 @@ Install missing GCC and Make
 
 Seem to need to run ```source /home/[username]/.rvm/scripts/rvm``` each time I start bash.
 
+Need to look at how to do includes and how to do themes and how to install github-pages....
 
 
 
