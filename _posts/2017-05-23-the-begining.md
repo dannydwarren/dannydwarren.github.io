@@ -25,7 +25,13 @@ Install missing GCC and Make
 
 [Helpful info about using Jekyll](https://jekyllrb.com/docs/templates/#code-snippet-highlighting)
 
-Seem to need to run ```source /home/[username]/.rvm/scripts/rvm``` each time I start bash.
+Seem to need to run ```source /home/[username]/.rvm/scripts/rvm``` each time I start bash. This is because the environment needs to load Ruby and Gems into CLI memory. To fix this you need to add the rvm scripts directory to the "bashrc" file.
+- Modify bashrc via nano ```nano ~/.bashrc``` ([info](https://ubuntuforums.org/showthread.php?t=2158436))
+- Add the following to the end of the file: ```[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"``` ([info](https://stackoverflow.com/a/4842674/1558446))
+- Exit with _CTRL+X_ and enter _y_ when prompted to save
+- Reload "bashrc" with the command ```source ~/.bashrc``` ([info](https://stackoverflow.com/a/2518150/1558446))
+- Commands for gem are now available when bash is started!
+    
 
 Need to look at how to do includes and how to do themes and how to install github-pages....
 
