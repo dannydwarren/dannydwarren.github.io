@@ -31,7 +31,7 @@ Install missing GCC and Make
     - Reload "bashrc" with the command `source ~/.bashrc` ([info](https://stackoverflow.com/a/2518150/1558446))
     - Commands for gem are now available when bash is started!
 
-NOTE: You may see the error message _"Unknown ruby interpreter version (do not know how to handle): RUBY_VERSION."_ Based on [this](https://stackoverflow.com/questions/38765138/how-to-fix-unknown-ruby-interpreter-version-do-not-know-how-to-handle-ruby-v) you can ignore this error.
+_NOTE:_ You may see the error message _"Unknown ruby interpreter version (do not know how to handle): RUBY_VERSION."_ Based on [this](https://stackoverflow.com/questions/38765138/how-to-fix-unknown-ruby-interpreter-version-do-not-know-how-to-handle-ruby-v) you can ignore this error.
 
 ### Using Jekyll
 
@@ -43,7 +43,14 @@ I also found that the default port 4000 was also occupied so I use the command `
 
 **FIXED:** Bash in Windows 10 Creators Update now correctly supports file watching so you can use the command `jekyll serve --port 9876` without any issues!
 
-Need to look at how to do includes and how to do themes and how to install github-pages...
+### Theme
+In order to use a Jekyll theme on GitHub pages follow these [instructions](https://jekyllrb.com/docs/themes/#installing-a-theme).  
+
+_NOTE:_ I found that `gem "theme-name"` did not work for me, but `gem install "theme-name"` did work.
+
+
+
+Need to look at how to do includes and how to do themes and how to install github-pages..
 
 
 

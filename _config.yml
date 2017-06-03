@@ -14,7 +14,6 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Blocks and Rocks
-email: dannydwarren@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Software developement is like playing with digital building blocks all day. My goal
   is to teach you about some of those individual blocks so you can develop amazing
@@ -27,7 +26,7 @@ github_username:  dannydwarren
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-minimal
+theme: minima
 gems:
   - jekyll-feed
 exclude:
