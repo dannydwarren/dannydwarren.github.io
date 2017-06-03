@@ -1,5 +1,3 @@
-# The beginning of my blog...
-
 ## Setting up Jekyll for GitHub Pages
 
 [Jekyll Installation Instructions](https://jekyllrb.com/docs/installation/)
@@ -44,7 +42,7 @@ I also found that the default port 4000 was also occupied so I use the command `
 **FIXED:** Bash in Windows 10 Creators Update now correctly supports file watching so you can use the command `jekyll serve --port 9876` without any issues!
 
 ### Installing Gem "github-pages"
-NOTE: I tried to get themes working first, but after adding this package the "minima" theme now works for posts locally so I suggest installing "github-pages" first, then worrying about themes.
+_NOTE:_ I tried to get themes working first, but after adding this package the "minima" theme now works for posts locally so I suggest installing "github-pages" first, then worrying about themes.
 
 Still not entirely sure why github-pages is required, needed, wanted, suggested... but I'm going ahead and installing it since that's where I'm hosting my jekyll site.
 
@@ -57,7 +55,17 @@ Still not entirely sure why github-pages is required, needed, wanted, suggested.
 - Run `bundle update`
 - Run `bundle install`
     - Not sure if this is necessary after a `bundle update`
-- I got the following error: "jekyll 3.4.3 | Error:  Could not find a JavaScript runtime. Seettps://github.com/rails/execjs for a list of available runtimes." To fix this I followed the suggestion [here](https://stackoverflow.com/questions/7092107/rails-could-not-find-a-javascript-runtime) to install nodejs, which I thought was already installed.
+
+_ISSUE:_ I got the following error: "jekyll 3.4.3 | Error:  Could not find a JavaScript runtime. Seettps://github.com/rails/execjs for a list of available runtimes."  
+_SOLUTION:_ To fix this I followed the suggestion [here](https://stackoverflow.com/questions/7092107/rails-could-not-find-a-javascript-runtime) to install nodejs, which I thought was already installed.
+
+_ISSUE:_ Next I got the following error: "Error: No repo name found. Specify using PAGES_REPO_NWO environment variables, 'repository' in your configuration, or set up an 'origin' git remote pointing to your github.com repository..."  
+_SOLUTION:_ I found my solution in part [here](https://www.hieule.info/programming/fix-errors-github-metadata-ssl-certificate-running-jekyll-serve/). I learned I needed a personal token from GitHub to access metadata. When I created my token I only applied _read_ access to _user info_ and _user email_. Then I used the token like suggested [here](https://github.com/jekyll/github-metadata) like this: `JEKYLL_GITHUB_TOKEN=123abc [bundle exec] jekyll serve --port 9876'
+
+_ISSUE:_ Then I got the error: "Regenerating: 1 file(s) changed at 2017-06-03 16:08:06 ...error: Error: No such file or directory - git". From just a little reading [here](https://github.com/jekyll/github-metadata/issues/57) this apparently indicates git is not in the PATH or maybe not even installed at all.  
+_SOLUTION:_ So I followed the "Installation" and "Configuration" steps in [this article](https://help.ubuntu.com/lts/serverguide/git.html).
+
+WOOT! NO MORE ERRORS!!!
 
 ### Theme
 In order to use a Jekyll theme on GitHub pages follow these [instructions](https://jekyllrb.com/docs/themes/#installing-a-theme).  
@@ -68,6 +76,3 @@ _NOTE:_ I found that `gem "theme-name"` did not work for me, but `gem install "t
 I think I'm going to bail on themes for now. I cannot figure out how to get a theme to work. I tried to apply "jekyll-theme-minimal" and "jekyll-theme-midnight" but both epically failed. The index page would not render at all after applying one of those themes. I'd like themes to work because "minima" is a bit boring, but there are more important things in life right now than styling my blog posts.
 
 It's also worth mentioning that even with "minima" I have not figured out how to get my local server to serve up the theme for posts. It works for index but not for post pages.
-  
-install github-pages..
-
