@@ -41,9 +41,9 @@ I found that in Windows 10 Anniversary Update the file watcher fails so the comm
 
 I also found that the default port 4000 was also occupied so I use the command `jekyll serve --no-watch --port 9876` to force another unused port.
 
-TODO: Validate Creators Update has the fix...
+**FIXED:** Bash in Windows 10 Creators Update now correctly supports file watching so you can use the command `jekyll serve --port 9876` without any issues!
 
-Need to look at how to do includes and how to do themes and how to install github-pages....
+Need to look at how to do includes and how to do themes and how to install github-pages...
 
 
 
