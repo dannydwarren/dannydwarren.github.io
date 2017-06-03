@@ -1,10 +1,10 @@
-# The begining of my blog...
+# The beginning of my blog...
 
 ## Setting up Jekyll for GitHub Pages
 
 [Jekyll Installation Instructions](https://jekyllrb.com/docs/installation/)
 
-[Using Windows 10 Anniversay+](https://jekyllrb.com/docs/windows/)
+[Using Windows 10 Anniversary+](https://jekyllrb.com/docs/windows/)
 
 
 [Install Bash](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide)
@@ -12,7 +12,7 @@
 Note for noobs: [Admin access in Linux aka Root Access](https://msdn.microsoft.com/en-us/commandline/wsl/user_support#permissions)
 - Open Bash from Admin CMD/PowerShell to have Root Access rights in Bash
 
-Encoutering Errno::EACCES
+Encountering Errno::EACCES
 - Make sure you ran Bash from an Admin CMD/PowerShell prompt
 - IF that still does not help then try using `sudo` in front of the command which is failing. [More info...](https://stackoverflow.com/questions/11496591/ruby-gem-permission-denied-var-lib-gems-using-ubuntu)
 
@@ -43,6 +43,22 @@ I also found that the default port 4000 was also occupied so I use the command `
 
 **FIXED:** Bash in Windows 10 Creators Update now correctly supports file watching so you can use the command `jekyll serve --port 9876` without any issues!
 
+### Installing Gem "github-pages"
+NOTE: I tried to get themes working first, but after adding this package the "minima" theme now works for posts locally so I suggest installing "github-pages" first, then worrying about themes.
+
+Still not entirely sure why github-pages is required, needed, wanted, suggested... but I'm going ahead and installing it since that's where I'm hosting my jekyll site.
+
+- Modify Gemfile
+    - Remove/Comment: `gem "jekyll", "3.4.3"`
+    - Add/Uncomment: `gem "github-pages", group: :jekyll_plugins`
+- Run `gem install github-pages`
+    - This took a while, like more than 15 min...
+    - NOTE: You can ignore the warning: "warning: insecure world writable dir in /home/username/.rvm/rubies/ruby-2.4.0/bin path, mode 04077 bash windows". [For more info](https://stackoverflow.com/questions/5380671/getting-the-warning-insecure-world-writable-dir-home-chance-in-path-mode-04).
+- Run `bundle update`
+- Run `bundle install`
+    - Not sure if this is necessary after a `bundle update`
+- I got the following error: "jekyll 3.4.3 | Error:  Could not find a JavaScript runtime. Seettps://github.com/rails/execjs for a list of available runtimes." To fix this I followed the suggestion [here](https://stackoverflow.com/questions/7092107/rails-could-not-find-a-javascript-runtime) to install nodejs, which I thought was already installed.
+
 ### Theme
 In order to use a Jekyll theme on GitHub pages follow these [instructions](https://jekyllrb.com/docs/themes/#installing-a-theme).  
 
@@ -54,6 +70,4 @@ I think I'm going to bail on themes for now. I cannot figure out how to get a th
 It's also worth mentioning that even with "minima" I have not figured out how to get my local server to serve up the theme for posts. It works for index but not for post pages.
   
 install github-pages..
-
-
 
