@@ -48,9 +48,10 @@ In order to use a Jekyll theme on GitHub pages follow these [instructions](https
 
 _NOTE:_ I found that `gem "theme-name"` did not work for me, but `gem install "theme-name"` did work.
 
-
-
-Need to look at how to do includes and how to do themes and how to install github-pages..
+#### Themes don't work for me...
+I think I'm going to bail on themes for now. I cannot figure out how to get a theme to work. I tried to apply "jekyll-theme-minimal" and "jekyll-theme-midnight" but both epically failed. The index page would not render at all after applying one of those themes. I'd like themes to work because "minima" is a bit boring, but there are more important things in life right now than styling my blog posts.
+  
+install github-pages..
 
 
 
