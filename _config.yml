@@ -27,7 +27,10 @@ repository: dannydwarren/dannydwarren.github.io
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-midnight
+theme: jekyll-theme-dinky
+#theme: jekyll-theme-midnight
+#theme: minima
+
 gems:
   - jekyll-feed
 exclude:

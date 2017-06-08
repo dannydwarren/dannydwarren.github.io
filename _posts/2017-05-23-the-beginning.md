@@ -1,5 +1,6 @@
 ---
 layout: default
+title: The Beginning of Time
 ---
 
 ## Setting up Jekyll for GitHub Pages
@@ -73,10 +74,14 @@ WOOT! NO MORE ERRORS!!!
 
 ### Theme
 In order to use a Jekyll theme on GitHub pages follow these [instructions](https://jekyllrb.com/docs/themes/#installing-a-theme).  
-
 _NOTE:_ I found that `gem "theme-name"` did not work for me, but `gem install "theme-name"` did work.
 
 #### Themes don't work for me...
-I think I'm going to bail on themes for now. I cannot figure out how to get a theme to work. I tried to apply "jekyll-theme-minimal" and "jekyll-theme-midnight" but both epically failed. The index page would not render at all after applying one of those themes. I'd like themes to work because "minima" is a bit boring, but there are more important things in life right now than styling my blog posts.
+I think I'm going to bail on themes for now. I cannot figure out how to get a theme to work. I tried to apply "jekyll-theme-minimal" and "jekyll-theme-midnight" but both epically failed. The index page content would not render at all after applying one of those themes. I'd like themes to work because "minima" is a bit boring, but there are more important things in life right now than styling my blog posts.
 
-It's also worth mentioning that even with "minima" I have not figured out how to get my local server to serve up the theme for posts. It works for index but not for post pages.
+#### Themes Attempt 2
+So I learned why my index.md file was not being rendered at all thanks to these two Stack Overflow questions: [first](https://stackoverflow.com/questions/44325985/github-pages-are-suddenly-blank), [second](https://stackoverflow.com/questions/42966262/change-theme-of-my-github-pages-and-pages-are-empty/42967184#42967184). In the YAML the layout was set to `home`, but the themes I've been trying don't have a `home` layout, only a `default` layout. Once I changed index.md to specify `default` it rendered! BUT, and it's a HUGE BUT, the list of blog posts is no longer rendering. *le sigh...*
+
+### Interesting Reading
+This [article](
+https://www.smashingmagazine.com/2015/11/static-website-generators-jekyll-middleman-roots-hugo-review/) discusses 4 different static site generators. Not sure if I made the right choice, but in the end everything I have is in markdown which works with any of these options and more!
