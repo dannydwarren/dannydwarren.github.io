@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 ## Setting up Jekyll for GitHub Pages
 
 [Jekyll Installation Instructions](https://jekyllrb.com/docs/installation/)
