@@ -1,9 +1,7 @@
 ---
 layout: post
-title: The Beginning of Time
+title: Setting up Jekyll for GitHub Pages
 ---
-
-# Setting up Jekyll for GitHub Pages
 
 ## Using Bash for Windows
 [Install Bash](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide)
@@ -39,7 +37,7 @@ Install missing GCC and Make
 
 _NOTE:_ You may see the error message _"Unknown ruby interpreter version (do not know how to handle): RUBY_VERSION."_ Based on [this](https://stackoverflow.com/questions/38765138/how-to-fix-unknown-ruby-interpreter-version-do-not-know-how-to-handle-ruby-v) you can ignore this error.
 
-### Using Jekyll
+### Starting Jekyll
 
 [Helpful info about using Jekyll](https://jekyllrb.com/docs/templates/#code-snippet-highlighting)
 
@@ -75,16 +73,47 @@ _SOLUTION:_ So I followed the "Installation" and "Configuration" steps in [this 
 
 WOOT! NO MORE ERRORS!!!
 
-### Theme
+## Themes
 In order to use a Jekyll theme on GitHub pages follow these [instructions](https://jekyllrb.com/docs/themes/#installing-a-theme).  
 _NOTE:_ I found that `gem "theme-name"` did not work for me, but `gem install "theme-name"` did work.
 
-#### Themes don't work for me...
+### Themes don't work for me...
 I think I'm going to bail on themes for now. I cannot figure out how to get a theme to work. I tried to apply "jekyll-theme-minimal" and "jekyll-theme-midnight" but both epically failed. The index page content would not render at all after applying one of those themes. I'd like themes to work because "minima" is a bit boring, but there are more important things in life right now than styling my blog posts.
 
-#### Themes Attempt 2
+### Themes Attempt 2
 So I learned why my index.md file was not being rendered at all thanks to these two Stack Overflow questions: [first](https://stackoverflow.com/questions/44325985/github-pages-are-suddenly-blank), [second](https://stackoverflow.com/questions/42966262/change-theme-of-my-github-pages-and-pages-are-empty/42967184#42967184). In the YAML the layout was set to `home`, but the themes I've been trying don't have a `home` layout, only a `default` layout. Once I changed index.md to specify `default` it rendered! BUT, and it's a HUGE BUT, the list of blog posts is no longer rendering. *le sigh...*
 
-### Interesting Reading
+### Themes Attempt 3+ (SPOILER: SUCCESS)
+I visited [Jekyll's Themes Wiki](https://github.com/jekyll/jekyll/wiki/Themes) on GitHub. After a lot of browsing I tried to get [Bitwiser](http://bitwiser.in/bitwiser/demo.html) working. This is where the first glimpse of hope arrived. I added it manually which means editing the `_config.yaml` to _not_ specify any theme (ex: `#theme: comment-out-all-theme-declarations`). This provided an implementation of `index.html` which I thought was interesting. Namely it looked like a template file. This is the key we'll learn about later.
+
+The Bitwiser theme was too buggy for me and did not format the list of posts on the home page well, so I decided to try the [Hydejack](https://github.com/qwtel/hydejack) theme. This theme encouraged an empty `index.html`. I thought that strange, but it started working right away. The home page, when set to `layout: list` shows all posts as we see it today, and each post when set to `layout: post` is nicely formatted. I really like this theme. I had to add it manually as well even though there is a gem for it. Something about my setup seems incompatible with gems working nicely. The `Hydejack` [installation instructions](https://qwtel.com/hydejack/docs/6.4.1/installation/#running-locally) have been very helpful in getting started and getting things configured.
+
+#### The index.(html|md) Secret
+Adapted from an email response from GitHub Support: The theme's default layout, which you specified for index.md doesn't have any code to show a list of posts, just the chosen page.
+
+https://github.com/pages-themes/dinky/blob/master/_layouts/default.html
+
+You might want to create a special layout for the home page which instead of the `{% raw %}{{ content }}{% endraw %}` tag has something like this instead:
+
+{% highlight xml %}
+
+<ul>
+  {% raw %}{% for post in site.posts %}{% endraw %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% raw %}{% endfor %}{% endraw %}
+</ul>
+
+{% endhighlight %}
+
+Which is described on Jekyll's Wiki Page for [Displaying an Index of Posts](https://jekyllrb.com/docs/posts/#displaying-an-index-of-posts).
+
+_**THANKS GITHUB SUPPORT!!!**_
+
+## Interesting Reading
 This [article](
 https://www.smashingmagazine.com/2015/11/static-website-generators-jekyll-middleman-roots-hugo-review/) discusses 4 different static site generators. Not sure if I made the right choice, but in the end everything I have is in markdown which works with any of these options and more!
+
+## Site Up and Running
+Finally, after weeks of struggling to get Jekyll up and running with GitHub Pages everything is up and running! I hope this post has helped you to navigate the insanity of getting Jekyll setup for your GitHub Pages site. If you have another awesome tutorial for the topic at hand please tweet it to me `@dannydwarren`! I'm always trying to learn and this was a fun, frustrating, and successful learning process.
