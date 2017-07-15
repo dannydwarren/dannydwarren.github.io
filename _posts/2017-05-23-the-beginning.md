@@ -1,23 +1,26 @@
 ---
-layout: default
+layout: post
 title: The Beginning of Time
 ---
 
-## Setting up Jekyll for GitHub Pages
+# Setting up Jekyll for GitHub Pages
 
-[Jekyll Installation Instructions](https://jekyllrb.com/docs/installation/)
-
-[Using Windows 10 Anniversary+](https://jekyllrb.com/docs/windows/)
-
-
+## Using Bash for Windows
 [Install Bash](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide)
 
-Note for noobs: [Admin access in Linux aka Root Access](https://msdn.microsoft.com/en-us/commandline/wsl/user_support#permissions)
+### Notes for noobs:
+[Admin access in Linux aka Root Access](https://msdn.microsoft.com/en-us/commandline/wsl/user_support#permissions)
 - Open Bash from Admin CMD/PowerShell to have Root Access rights in Bash
+
+[How to navigate folders in bash](https://askubuntu.com/questions/831361/windows-ubuntu-bash-change-directory).
 
 Encountering Errno::EACCES
 - Make sure you ran Bash from an Admin CMD/PowerShell prompt
 - IF that still does not help then try using `sudo` in front of the command which is failing. [More info...](https://stackoverflow.com/questions/11496591/ruby-gem-permission-denied-var-lib-gems-using-ubuntu)
+
+## Install Jekyll
+[Using Windows 10 Anniversary+](https://jekyllrb.com/docs/windows/)
+[Jekyll Installation Instructions](https://jekyllrb.com/docs/installation/)
 
 Install missing GCC and Make
 - `sudo apt-get install gcc`
