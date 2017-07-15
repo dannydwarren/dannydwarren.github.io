@@ -12,7 +12,7 @@ url:                 https://dannydwarren.github.io
 
 # Set to '' when hosting a blog on GitHub Pages, ie on `//<username>.github.io`
 # Set to '/<reponame>' when using the `gh-pages` branch of a repository
-baseurl:             /dannydwarren.github.io
+baseurl:             
 
 # A very short description of your page
 tagline:             A blog for software blocks and physical rocks.
@@ -31,7 +31,7 @@ author:
   email:             dannydwarren@gmail.com
 
 # Fallback image and color
-image:               /dannydwarren.github.io/assets/img/nap.jpg
+image:               /assets/img/nap.jpg
 color:               '#4f86aa'
 
 # The font used for headings. Expects a string that is a valid CSS font-family value.
