@@ -13,18 +13,21 @@ qwtel:
 
   # This photo will be used in the about section
   picture:
-    src:             https://placehold.it/128x128
+    src:             https://avatars1.githubusercontent.com/u/1190767?v=4&s=460
     # srcset is optional, but can be used to provide higher res versions for retina displays
-    srcset:
-      1x:            https://placehold.it/128x128
-      2x:            https://placehold.it/256x256
+    #srcset:
+    #  1x:            https://placehold.it/128x128
+    #  2x:            https://placehold.it/256x256
 
   # Social media icons in sidebar
   # Comment/uncommet to show/hide
   # Icons appear in order, can be rearranged:
   social:
-    # facebook:        <username>
     twitter:         dannydwarren
+    linkedin:        dannydwarren
+    github:          dannydwarren
+    email:           mailto:dannydwarren+blog@gmail.com
+    # facebook:        <username>
     # google:          <number>
     # vk:              <username>
     # youtube:         <string_string_string>
@@ -47,18 +50,15 @@ qwtel:
     # pinterest:       <username>
     # foursquare:      <number>
     # yelp:            <string>
-    github:          dannydwarren
     # stackoverflow:   <number/username>
     # npm:             <username>
     # hackernews:      <username>
     # trello:          <firstnamelastname>
-    # linkedin:        <firstname-lastname-string>
     # xing:            <firstname_lastname_counter>
     # blogger:         <number>
     # delicious:       <username>
     # stumbleupon:     <username>
     # paypal:          <username>
-    email:           mailto:dannydwarren@gmail.com
     #rss:             https://<url>/feed.xml
 
 # # Another author

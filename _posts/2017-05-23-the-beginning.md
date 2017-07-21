@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Setting up Jekyll for GitHub Pages
+comments: true
 ---
 
 ## Using Bash for Windows
@@ -17,7 +18,7 @@ Encountering Errno::EACCES
 - IF that still does not help then try using `sudo` in front of the command which is failing. [More info...](https://stackoverflow.com/questions/11496591/ruby-gem-permission-denied-var-lib-gems-using-ubuntu)
 
 ## Install Jekyll
-[Using Windows 10 Anniversary+](https://jekyllrb.com/docs/windows/)
+[Using Windows 10 Anniversary+](https://jekyllrb.com/docs/windows/)  
 [Jekyll Installation Instructions](https://jekyllrb.com/docs/installation/)
 
 Install missing GCC and Make
