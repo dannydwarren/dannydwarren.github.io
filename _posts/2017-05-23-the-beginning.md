@@ -96,8 +96,7 @@ https://github.com/pages-themes/dinky/blob/master/_layouts/default.html
 
 You might want to create a special layout for the home page which instead of the `{% raw %}{{ content }}{% endraw %}` tag has something like this instead:
 
-{% highlight xml %}
-
+~~~xml
 <ul>
   {% raw %}{% for post in site.posts %}{% endraw %}
     <li>
@@ -105,8 +104,7 @@ You might want to create a special layout for the home page which instead of the
     </li>
   {% raw %}{% endfor %}{% endraw %}
 </ul>
-
-{% endhighlight %}
+~~~
 
 Which is described on Jekyll's Wiki Page for [Displaying an Index of Posts](https://jekyllrb.com/docs/posts/#displaying-an-index-of-posts).
 
