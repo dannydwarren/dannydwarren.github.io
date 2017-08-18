@@ -108,10 +108,10 @@ You might want to create a special layout for the home page which instead of the
 
 Which is described on Jekyll's Wiki Page for [Displaying an Index of Posts](https://jekyllrb.com/docs/posts/#displaying-an-index-of-posts).
 
+_**THANKS GITHUB SUPPORT!!!**_
+
 #### Updating Hydejack (Manual Process)
 I use the [migration documentation](https://github.com/qwtel/hydejack/wiki/Migration) to help with upgrades.
-
-_**THANKS GITHUB SUPPORT!!!**_
 
 ## Interesting Reading
 This [article](
