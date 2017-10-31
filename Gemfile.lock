@@ -215,7 +215,12 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
-  jekyll-feed (~> 0.6)
+  jekyll (~> 3.6)
+  jekyll-feed (~> 0.9)
+  jekyll-paginate (~> 1.1)
+  jekyll-relative-links (~> 0.5)
+  jekyll-seo-tag (~> 2.3)
+  jekyll-sitemap (~> 1.1)
   tzinfo-data
 
 RUBY VERSION
