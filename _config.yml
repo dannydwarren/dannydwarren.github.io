@@ -101,11 +101,16 @@ collections:
 #  Advanced configuration
 # -----------------------------------------------------------------------------
 
+
+# Build settings
+markdown: kramdown
+theme: jekyll-theme-hydejack
+
 plugins:
   - jekyll-feed
-  - jekyll-sitemap
+  #- jekyll-sitemap
   - jekyll-paginate
-  - jekyll-redirect-from
+  #- jekyll-redirect-from
 
 exclude:
   - README.md
@@ -115,6 +120,10 @@ exclude:
   - package-lock.json
   - Gemfile
   - Gemfile.lock
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
 
 kramdown:
   footnote_backlink: '&#x21a9;&#xfe0e;'
