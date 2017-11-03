@@ -2,6 +2,8 @@
 layout: post
 title: Setting up Jekyll for GitHub Pages
 comments: true
+categories: [software]
+tags:       [jekyll, intro]
 ---
 
 ## Using Bash for Windows
@@ -87,7 +89,7 @@ So I learned why my index.md file was not being rendered at all thanks to these 
 ### Themes Attempt 3+ (SPOILER: SUCCESS)
 I visited [Jekyll's Themes Wiki](https://github.com/jekyll/jekyll/wiki/Themes) on GitHub. After a lot of browsing I tried to get [Bitwiser](http://bitwiser.in/bitwiser/demo.html) working. This is where the first glimpse of hope arrived. I added it manually which means editing the `_config.yaml` to _not_ specify any theme (ex: `#theme: comment-out-all-theme-declarations`). This provided an implementation of `index.html` which I thought was interesting. Namely it looked like a template file. This is the key we'll learn about later.
 
-The Bitwiser theme was too buggy for me and did not format the list of posts on the home page well, so I decided to try the [Hydejack](https://github.com/qwtel/hydejack) theme. This theme encouraged an empty `index.html`. I thought that strange, but it started working right away. The home page, when set to `layout: blog` shows all posts as we see it today, and each post when set to `layout: post` is nicely formatted. I really like this theme. I had to add it manually as well even though there is a gem for it. Something about my setup seems incompatible with gems working nicely. The `Hydejack` [installation instructions](https://qwtel.com/hydejack/docs/6.4.1/installation/#running-locally) have been very helpful in getting started and getting things configured.
+The Bitwiser theme was too buggy for me and did not format the list of posts on the home page well, so I decided to try the [Hydejack](https://github.com/qwtel/hydejack) theme. This theme encouraged an empty `index.html`. I thought that strange, but it started working right away. The home page, when set to `layout: blog` shows all posts as we see it today, and each post when set to `layout: post` is nicely formatted. I really like this theme. I had to add it manually as well even though there is a gem for it. The theme is not supported by GitHub pages via a gem. The `Hydejack` [installation instructions](https://qwtel.com/hydejack/docs/6.4.1/installation/#running-locally) have been very helpful in getting started and getting things configured.
 
 #### The index.(html|md) Secret
 Adapted from an email response from GitHub Support: The theme's default layout, which you specified for index.md doesn't have any code to show a list of posts, just the chosen page.
