@@ -5,7 +5,7 @@ comments: true
 categories: [software]
 tags:       [apple, productivity]
 ---
-## First Mac
+## My First Mac
 I recently started at Pluralsight and as my daily machine I now have a MacBook Pro (15-inch, 2016). I really like it, except for all the things I don't like... See I'm a Microsoft fan boy. So I'm used to having a lot of the OS provided up front, but on Mac I find myself craving functionality that is not available by default. Luckily all the Mac folks before me have realized these short comings already and have made add-on products that I can use to fill in those gaps. So without further ado here is my list (updated over time) of products, utilities, tools, and other learnings that I wish I was told before I joined all the iSheeple.
 
 ## Touch Bar
