@@ -43,7 +43,19 @@ Left-click back in Chrome with multiple pages to go back though. While holding l
 Even I have to admit that trackpad in Mac is the best in class. I'm totally blown away that I almost never have erroneous clicks when typing in MacOS even with my sweaty palms all over this trackpad. It's a breath of fresh air! However, the awesome trackpad is only awesome by combining Apple hardware with MacOS. Once inside Windows native on Apple hardware the trackpad is no better and sometimes worse, because of size, than other hardware. The solution for this poor experience is [Trackpad++](http://trackpad.forbootcamp.org/) which helps replicate some awesome MacOS gestures in Windows and also allows you to turn the trackpad off all together! If you don't purchase it, you are required to update to the latest version. Not a bad deal if you always want the latest for free!
 
 ##### Trackpad++ Configuration (UPDATE: 2017-12-21)
-
+- 2-Finger Gestures
+  - Disable: Pinch-to-Zoom, Accelerate Scroll, Edge Gestures (use the settings icon by it)
+  - Enable: Invert Swipe Dir., Invert Scroll Dir.
+- Trackpad as Mouse
+  - Disable: Tap-to-Click, Secondary Tap
+- Elimination of Accidental Input
+  - Enable: On Lifting Fingers Release 3-Finger Drag Immediately (No Delay), When Typing, Ignore All 'Trackpad Input', Lower Pinch-to-Zoom Sensitivity
+- 3-Finger Gestures
+  - Swipe Left: Next Desktop
+  - Swipe Right: Previous Desktop
+- 4-Finger Gestures
+  - Swipe Left: Forward
+  - Swipe Right: Back
 
 ## Other Thoughts
 If you have any awesome tools to make MacOS or Windows on Apple hardware better leave a comment! I'm all about making our OS as comfortable as possible and would love to have a similar experience on both Windows and MacOS. That may be blasphemous to some, but really a computer is a computer and an OS is just that an OS, not a religion! 
