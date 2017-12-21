@@ -47,7 +47,7 @@ Even I have to admit that trackpad in Mac is the best in class. I'm totally blow
   - Disable: Pinch-to-Zoom, Accelerate Scroll, Edge Gestures (use the settings icon by it)
   - Enable: Invert Swipe Dir., Invert Scroll Dir.
 - Trackpad as Mouse
-  - Disable: Tap-to-Click, Secondary Tap
+  - Disable: Tap-to-Click
 - Elimination of Accidental Input
   - Enable: On Lifting Fingers Release 3-Finger Drag Immediately (No Delay), When Typing, Ignore All 'Trackpad Input', Lower Pinch-to-Zoom Sensitivity
 - 3-Finger Gestures
