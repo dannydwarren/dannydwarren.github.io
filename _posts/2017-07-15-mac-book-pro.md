@@ -56,6 +56,9 @@ Even I have to admit that trackpad in Mac is the best in class. I'm totally blow
 - 4-Finger Gestures
   - Swipe Left: Forward
   - Swipe Right: Back
+- Update Windows Settings for Mouse
+  - Open: Change your mouse settings
+    - Choose how many lines to scroll each time: Lower to 1 (min). NOTE: This will make the mouse scroll feel slow, but you can use mouse wheel specific settings to overcome this if you have a Logitech mouse or potentially other brands with dedicated mouse software.
 
 ## Other Thoughts
 If you have any awesome tools to make MacOS or Windows on Apple hardware better leave a comment! I'm all about making our OS as comfortable as possible and would love to have a similar experience on both Windows and MacOS. That may be blasphemous to some, but really a computer is a computer and an OS is just that an OS, not a religion! 
