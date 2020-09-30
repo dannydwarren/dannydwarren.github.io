@@ -5,7 +5,6 @@ comments: true
 categories: [software]
 tags:       [cross-post-interknowlogy]
 ---
-
 Originally posted on [blogs.interknowlogy.com](http://blogs.interknowlogy.com/2011/03/09/no-more-iis7-wcf-rest-404-error/)
 
 Recently I’ve been trying to host a WCF REST .NET 4.0 service in IIS7. I downloaded the template for VS2010 used for creating REST services as explained [here](http://christopherdeweese.com/blog2/post/drop-the-soap-wcf-rest-and-pretty-uris-in-net-4). Running the sample application found on that [website](http://christopherdeweese.com/blog2/post/drop-the-soap-wcf-rest-and-pretty-uris-in-net-4) worked fine from VS2010. I then switched to hosting the service in IIS7. The result however was a 404 error, not exactly what I was hoping for. My coworker Dan Hanan tried the same thing on his machine with complete success. We looked at the service configuration, IIS7 settings, among other obscure settings without success. Google wasn’t especially helpful since most of the results kept saying things like “add an *.svc file” (which is not required/used in .NET 4.0 REST services), others mentioned changing an IIS7 handler mapping so that the *.svc file would not be required, but none of these solutions helped. Tracing didn’t help me get any closer either.
