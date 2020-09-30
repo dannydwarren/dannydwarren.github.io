@@ -1,0 +1,7 @@
+---
+layout: list
+title:  cross-post-interknowlogy
+slug:   cross-post-interknowlogy
+description: >
+  Articles originally posted on [blogs.interknowlogy.com](blogs.interknowlogy.com)
+---
